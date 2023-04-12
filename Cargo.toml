@@ -29,8 +29,6 @@ members = [
 	# 	"runtime/moonriver",
 ]
 
-# make sure dev builds with backtrace do
-# not slow us down
 [profile.dev.package.backtrace]
 inherits = "release"
 
