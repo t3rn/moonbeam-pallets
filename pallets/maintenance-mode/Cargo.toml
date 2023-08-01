@@ -29,7 +29,7 @@ sp-core = { workspace = true, features = [ "std" ] }
 sp-io = { workspace = true, features = [ "std" ] }
 
 [features]
-default = [ "std", "xcm-support" ]
+default = [ "std" ]
 std = [
 	"cumulus-primitives-core/std",
 	"frame-support/std",

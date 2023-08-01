@@ -378,7 +378,7 @@ pub mod pallet {
 		/// Sets keys WITHOUT reserving deposit, for benchmarking purposes only
 		#[cfg(feature = "runtime-benchmarks")]
 		fn set_keys(id: NimbusId, account: T::AccountId, keys: T::Keys) {
-			use sp_runtime::traits::Zero;
+			use frame_support::sp_runtime::traits::Zero;
 			MappingWithDeposit::<T>::insert(
 				id,
 				RegistrationInfo {
